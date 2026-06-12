@@ -1,0 +1,21 @@
+import { BottomNavigationSection } from "./BottomNavigationSection";
+import { ClassBookingFormSection } from "./ClassBookingFormSection";
+
+export const BookingKelas = (): JSX.Element => {
+  return (
+    <main className="bg-white w-full min-w-[360px] min-h-[800px] relative overflow-x-hidden">
+      <header className="absolute top-[-123px] left-[calc(50.00%_-_180px)] w-[360px] h-[304px]">
+        <div className="w-full h-full bg-[#800000] rounded-[0px_0px_48px_48px]" />
+      </header>
+      <h1 className="absolute top-[61px] left-[calc(50.00%_-_68px)] [font-family:'Inter-Bold',Helvetica] font-bold text-white text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+        PESAN KELAS
+      </h1>
+      <section aria-label="Form pemesanan kelas">
+        <ClassBookingFormSection />
+      </section>
+      <nav aria-label="Navigasi bawah">
+        <BottomNavigationSection />
+      </nav>
+    </main>
+  );
+};
